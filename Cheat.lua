@@ -1,7 +1,7 @@
 -- Ссылка на библиотеку
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 
--- Создаем функцию для ввода ключа
+-- Функция для ввода ключа
 local function promptKey()
     local ScreenGui = Instance.new("ScreenGui")
     ScreenGui.Name = "KeyPrompt"
@@ -52,6 +52,8 @@ if key == "VHS" then
     -- Создаем вкладки и разделы
     local Tab = Window:NewTab("MyCheats")
     local Section = Tab:NewSection("Cheats")
+    local Tab2 = Window:NewTab("OtherCheats")
+    local Section2 = Tab2:NewSection("NotmyScript")
 
     -- Добавляем кнопки
     Section:NewButton("SAF2", "ButtonInfo", function()
@@ -63,11 +65,11 @@ if key == "VHS" then
     Section:NewButton("SOB", "ButtonInfo", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xcopert25/cheat-Sod/refs/heads/main/WNewcheat.lua"))()
     end)
+    Section:NewButton("USB", "ButtonInfo", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xbomber228/cheat-USB/refs/heads/main/Cheat.lua"))()
+    end)
 
     -- Другие разделы
-    local Tab2 = Window:NewTab("OtherCheats")
-    local Section2 = Tab2:NewSection("NotmyScript")
-
     Section2:NewButton("InifinityYierld", "ButtonInfo", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end)
@@ -83,6 +85,7 @@ if key == "VHS" then
     Section2:NewButton("BABFT", "ButtonInfo", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/TheRealAsu/BABFT/refs/heads/main/Loader.lua'))()
     end)
+
 else
     print("Неверный ключ")
 end
