@@ -68,7 +68,9 @@ if key == "VHS" then
     Section:NewButton("USB", "ButtonInfo", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xbomber228/cheat-USB/refs/heads/main/Cheat.lua"))()
     end)
-
+    Section:NewButton("Undertale Multiversal Calamity 2", "ButtonInfo", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xbomber228/Cheat-calamity2/refs/heads/main/Cheat.lua"))()
+    end)
     -- Другие разделы
     Section2:NewButton("InifinityYierld", "ButtonInfo", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
